@@ -1,38 +1,99 @@
-.App {
+* {
+  margin: 0;
+  padding: 0;
+  background-color: rgb(189, 221, 10);
+}
+body {
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#clothesPicture {
+  width: 200px;
+  padding: 10px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.cards {
+  width: 250px;
+  height: 300px;
+  margin: 23px;
+  color: aliceblue;
+  background-color: rgb(5, 216, 107);
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.products,.cartprod {
+  flex-basis: 85%;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-wrap: wrap;
+  padding: 100px;
+  justify-content: space-between;
+}
+.btn {
+  width: 100px;
+  /* border-radius: 10px; */
+  border: none;
+  height: 30px;
+  padding: 3px;
+  cursor: pointer;
+  margin: 10px;
+  margin-top: 30px;
+  color: rgb(17, 16, 16);
+  background-color: rgb(226, 9, 20);
+}
+.btn:hover{
+  background-color: rgba(44, 31, 14, 0.892);
+}
+.cartbtn:hover{
+  background-color: rgba(51, 36, 17, 0.892);
+}
+#cat {
+  width: 200px;
+  height: 20px;
+  margin: 10px;
+  /* text-align: center; */
+  padding: 3px;
+  border-radius: 5px;
+}
+.productItems {
+  /* display: flex; */
+  /* flex-basis: 16%; */
+  margin-bottom: 20px;
+  width: 20%;
+  padding: 8px;
+  box-shadow: 0px 0px 10px #817e7e;
 }
 
-.App-link {
-  color: #61dafb;
+.productItems h6,
+.productItems h5 {
+  padding: 4px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.productItems h6 span {
+  text-decoration: line-through;
+}
+
+.productItems hr {
+  margin: 2px 0px 3px 0px;
+}
+img {
+  width: 240px;
+}
+#search{
+  width: 250px;
+  height: 30px;
+  /* border: none; */
+  border:3px solid black;
+  background-color: white;
+  border-radius: 10px;
+  padding: 5px;
+  border:2px;
+  margin: 30px;
+}
+.cartbtn{
+  color: azure;
+  border: none;
+  height: 30px;
+  font-weight: 100;
+  width: 100px;
+  cursor: pointer;
+  background-color: rgb(252, 6, 80);
+}
+h1{
+  margin: 30px;
 }
